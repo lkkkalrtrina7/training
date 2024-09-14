@@ -4,8 +4,7 @@
       <input
         type="email"
         matInput
-        placeholder="Your email"
-        formControlName="email">
+        placeholder="Your email" formControlName="email">
       <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Field must be not empty.</mat-error>
       <mat-error *ngIf="loginForm.get('email')?.hasError('email')">E-mail is invalid.</mat-error>
     </mat-form-field>

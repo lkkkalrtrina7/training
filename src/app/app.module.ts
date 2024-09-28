@@ -15,8 +15,9 @@ import {environment} from "../environment/environment";
 import {AngularFireModule} from "@angular/fire/compat";
 import {UIService} from "./shared/ui.service";
 import {AuthModule} from "./auth/auth.module";
-import {SharedModule} from "./shared/shared.module";
-import {TrainingModule} from "./training/training.module";
+import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
+import {StoreModule} from "@ngrx/store";
+import {appReducer} from "./app.reducer";
 
 @NgModule({
   declarations: [
@@ -34,8 +35,8 @@ import {TrainingModule} from "./training/training.module";
     FlexLayoutModule,
     AngularFireModule.initializeApp(environment.firebase),
     AuthModule,
-    SharedModule,
-    TrainingModule
+    AngularFirestoreModule,
+    StoreModule.forRoot({ui: appReducer})
   ],
   providers: [AuthService,TrainingService,UIService],
   bootstrap: [AppComponent],

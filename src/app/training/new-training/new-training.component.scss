@@ -1,3 +1,17 @@
-.new-training{
+.new-training {
   padding: 30px;
+  background-image: url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+.shortened-card {
+  padding: 20px;
+  margin-bottom: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;}
+.card-title {
+  margin-bottom: 20px;
 }

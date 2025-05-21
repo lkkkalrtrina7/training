@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1519859660545-3dea8ddf683c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mat-table {
+  background-color: rgba(255, 255, 255, 0.8); /* To make the table content more readable */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  padding: 20px; /* Adds padding around the table */
+  margin-left: 20px; /* Adds space on the left */
+  margin-right: 20px; /* Adds space on the right */
+  max-width: calc(100% - 40px); /* Ensures table does not overflow the screen */
+}
+

@@ -3,13 +3,22 @@
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button></div>
-  <div><a routerLink="/">Ng Fitness</a> </div>
+  <div>
+    <mat-icon  style="margin-right: 8px;vertical-align: middle; padding-top: 1px;">fitness_center</mat-icon>
+    <a routerLink="/">Kertuka Fitness</a> </div>
   <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
     <ul fxLayout fxLayoutGap="10px" class="navigation-items">
-      <li *ngIf="!isAuth"> <a routerLink="/signup">Signup</a></li>
-      <li *ngIf="!isAuth"> <a routerLink="/login">Login</a></li>
-      <li *ngIf="isAuth"><a routerLink="/training">Training</a></li>
-      <li *ngIf="isAuth">
+      <li *ngIf="!(isAuth$ | async)">
+        <mat-icon style="margin-right: 8px; vertical-align: middle; padding-top: 1px;">person_add</mat-icon>
+        <a routerLink="/signup">Signup</a></li>
+      <li *ngIf="!(isAuth$ | async)">
+        <mat-icon style="margin-right: 8px; vertical-align: middle; padding-top: 1px;">login</mat-icon>
+        <a routerLink="/login">Login</a></li>
+      <li *ngIf="isAuth$ | async">
+        <mat-icon style="margin-right: 8px; vertical-align: middle; padding-top: 1px;">directions_run</mat-icon>
+        <a routerLink="/training">Training</a></li>
+      <li *ngIf="isAuth$ | async">
+        <mat-icon style="margin-right: 8px;vertical-align: middle; padding-top: 1px;">exit_to_app</mat-icon>
         <a style="cursor: pointer" (click)="onLogout()">Logout</a></li>
     </ul>
   </div>

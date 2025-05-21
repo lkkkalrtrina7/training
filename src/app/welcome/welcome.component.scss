@@ -1,3 +1,65 @@
-.welcome {
+.fixed-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
   text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-bottom: 60px;
+}
+
+.history-section, .facilities-section, .getting-started-section {
+  margin: 60px auto; /* Space between sections */
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.history-section {
+  background-color: #e0f7e0; /* Light green background */
+}
+
+.history-section h2 {
+  font-size: 36px;
+  color: #006400;
+}
+
+.facilities-section {
+  background-color: #e0f7fa; /* Light blue background */
+}
+
+.facilities-section h2 {
+  font-size: 36px;
+  color: #00695c;
+}
+
+.getting-started-section {
+  background-color: #e0f7fa; /* Light blue background, similar to facilities */
+}
+
+.getting-started-section h2 {
+  font-size: 36px;
+  color: #00695c;
+}
+
+.training-image {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 300px; /* Or any desired max width */
+  margin-top: 20px; /* Space above the image */
 }
